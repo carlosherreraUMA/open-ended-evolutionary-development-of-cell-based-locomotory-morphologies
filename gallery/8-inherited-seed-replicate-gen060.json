@@ -1,0 +1,284 @@
+{
+ "genome": {
+  "id": 2467,
+  "birthGeneration": 60,
+  "neurons": [
+   [
+    0,
+    "bias"
+   ],
+   [
+    1,
+    "input"
+   ],
+   [
+    2,
+    "input"
+   ],
+   [
+    3,
+    "input"
+   ],
+   [
+    4,
+    "input"
+   ],
+   [
+    5,
+    "input"
+   ],
+   [
+    6,
+    "input"
+   ],
+   [
+    7,
+    "input"
+   ],
+   [
+    8,
+    "input"
+   ],
+   [
+    9,
+    "input"
+   ],
+   [
+    10,
+    "input"
+   ],
+   [
+    11,
+    "input"
+   ],
+   [
+    12,
+    "output"
+   ],
+   [
+    13,
+    "output"
+   ],
+   [
+    14,
+    "output"
+   ],
+   [
+    15,
+    "output"
+   ],
+   [
+    16,
+    "output"
+   ],
+   [
+    17,
+    "output"
+   ],
+   [
+    18,
+    "output"
+   ],
+   [
+    19,
+    "output"
+   ],
+   [
+    20,
+    "output"
+   ],
+   [
+    21,
+    "output"
+   ],
+   [
+    22,
+    "output"
+   ],
+   [
+    23,
+    "output"
+   ],
+   [
+    168,
+    "hidden"
+   ]
+  ],
+  "connections": [
+   [
+    32,
+    0,
+    20,
+    -1.3964208088421104
+   ],
+   [
+    42,
+    1,
+    18,
+    -0.07686586696963649
+   ],
+   [
+    47,
+    1,
+    23,
+    1.1029553068059834
+   ],
+   [
+    48,
+    2,
+    12,
+    1.091248887831617
+   ],
+   [
+    75,
+    4,
+    15,
+    4.428852601945807
+   ],
+   [
+    79,
+    4,
+    19,
+    2.9558675812288664
+   ],
+   [
+    92,
+    5,
+    20,
+    2.342376848139325
+   ],
+   [
+    95,
+    5,
+    23,
+    1.2838964540223121
+   ],
+   [
+    96,
+    6,
+    12,
+    1.3446981092110935
+   ],
+   [
+    107,
+    6,
+    23,
+    -4.310769179314384
+   ],
+   [
+    149,
+    10,
+    17,
+    -1.0858398663025606
+   ],
+   [
+    152,
+    10,
+    20,
+    4.280326450763104
+   ],
+   [
+    167,
+    11,
+    23,
+    2.081125848260395
+   ],
+   [
+    169,
+    1,
+    168,
+    -4.246756159468717
+   ],
+   [
+    170,
+    168,
+    15,
+    5
+   ],
+   [
+    171,
+    0,
+    19,
+    -2.4034392391331494
+   ],
+   [
+    213,
+    9,
+    15,
+    2.3133558836830077
+   ],
+   [
+    217,
+    0,
+    21,
+    3.8019032520242035
+   ],
+   [
+    224,
+    168,
+    18,
+    0.8173055681985293
+   ]
+  ],
+  "devSeed": 3987635874
+ },
+ "fitness": 0.000054955664126797784,
+ "eval": {
+  "seed": 3012847604,
+  "generation": 59,
+  "cells": 17,
+  "muscles": 60,
+  "workingMuscles": 60,
+  "regions": 2,
+  "distance": 2.198226556150594,
+  "penalty": 1.9999999918831683
+ },
+ "params": {
+  "mode": "fixed",
+  "physics": {
+   "medium": "substrate",
+   "gravity": 9.81,
+   "drag": 1,
+   "radius": 0.5,
+   "mass": 10,
+   "friction": null,
+   "substeps": 4,
+   "iterations": 2,
+   "viscosity": {
+    "parallel": 50,
+    "perpendicular": 100
+   },
+   "cellMass": 0,
+   "quadraticDrag": 0,
+   "weight": 20,
+   "groundStiffness": 500,
+   "adhesion": {
+    "stuck": 2000,
+    "free": 20
+   }
+  },
+  "dt": 0.02,
+  "hingeStiffness": 10,
+  "muscleStiffness": 1000,
+  "muscleRange": 0.15,
+  "maxHeight": 5,
+  "muscleModel": "cpg",
+  "maxAmplitude": 0.5,
+  "maxFrequency": 1,
+  "maxCoupling": 6,
+  "fitnessWindow": "second-half",
+  "musclePenalty": "geometric-mean",
+  "muscleSharing": true,
+  "settle": {
+   "speed": 0.01,
+   "hold": 0.5,
+   "maxTime": 10
+  },
+  "development": "stochastic",
+  "seedMode": "inherited",
+  "positionalInputs": false,
+  "muscleScope": "all",
+  "divideByRegions": true
+ },
+ "runSeed": 4
+}

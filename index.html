@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creatures</title>
+    <link rel="stylesheet" href="/src/viewer/style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="viewport">
+        <div id="hud">
+          <div id="hud-title">Champion</div>
+          <div id="hud-time">—</div>
+          <div class="progress"><div id="hud-progress"></div></div>
+        </div>
+        <div id="legend">
+          <span><i class="dot root"></i>root</span>
+          <span><i class="line fixed"></i>fixed joint</span>
+          <span><i class="line hinge"></i>hinge</span>
+          <span><i class="line muscle"></i>working muscle</span>
+          <span><i class="line passive"></i>passive muscle</span>
+          <span><i class="line trail"></i>path</span>
+          <span id="legend-cpg" hidden><i class="dot glow"></i>brightness = phase of the segment's oscillator</span>
+          <span id="legend-stuck" hidden><i class="dot stuck"></i>cell attached to the substrate</span>
+          <span id="legend-dust"><i class="dot dust"></i>fluid particles (fixed)</span>
+        </div>
+      </section>
+
+      <aside id="panel">
+        <h1>Creatures <small>NEAT · ALife</small></h1>
+
+        <section>
+          <h2>Evolution</h2>
+          <div class="grid">
+            <label>Population <input id="pop" type="number" min="3" value="20" /></label>
+            <label>Species <input id="species" type="number" min="1" value="3" /></label>
+            <label>Seed <input id="seed" type="number" value="1" /></label>
+            <label>Mode
+              <select id="mode">
+                <option value="fixed">fixed</option>
+                <option value="original">original (C# bugs)</option>
+              </select>
+            </label>
+            <label>Medium
+              <select id="medium">
+                <option value="substrate">substrate (crawl with adhesion)</option>
+                <option value="viscous">viscous (swim)</option>
+                <option value="ground">ground (as in Unity)</option>
+              </select>
+            </label>
+            <label>Muscles
+              <select id="muscles">
+                <option value="cpg">CPG (coupled oscillators)</option>
+                <option value="oscillator">explicit oscillator</option>
+                <option value="accumulative">accumulative (the C# code)</option>
+              </select>
+            </label>
+            <label>Fitness
+              <select id="fitness">
+                <option value="second-half">distance in the 2nd half</option>
+                <option value="full">full (the C# code)</option>
+              </select>
+            </label>
+            <label>Penalty
+              <select id="penalty">
+                <option value="geometric-mean">bounded (geometric mean)</option>
+                <option value="product">product (the C# code)</option>
+              </select>
+            </label>
+            <label class="check"><input id="sharing" type="checkbox" checked /> Share force per cell</label>
+            <label class="check"><input id="inherited" type="checkbox" checked /> Inherited development seed</label>
+            <label id="friction-field">Friction <input id="friction" type="text" value="∞" title="∞ or a number (Coulomb coefficient)" /></label>
+          </div>
+          <div class="buttons">
+            <button id="start" class="primary">Start</button>
+            <button id="pause" disabled>Pause</button>
+            <label class="file">Load population<input id="load-pop" type="file" accept=".json" /></label>
+          </div>
+          <dl id="status" class="stats">
+            <dt>Generation</dt><dd id="s-gen">—</dd>
+            <dt>Best fitness</dt><dd id="s-best">—</dd>
+            <dt>Mean fitness</dt><dd id="s-mean">—</dd>
+            <dt>Complexity</dt><dd id="s-complexity">—</dd>
+            <dt>Species</dt><dd id="s-species">—</dd>
+          </dl>
+          <canvas id="chart" height="150"></canvas>
+          <div class="chart-legend"><span class="best">best</span><span class="mean">mean</span><span class="note">log₁₀ scale</span></div>
+        </section>
+
+        <section>
+          <h2>Champion</h2>
+          <dl class="stats">
+            <dt>Fitness</dt><dd id="c-fitness">—</dd>
+            <dt>Replay</dt><dd id="c-replay">—</dd>
+            <dt>Cells</dt><dd id="c-cells">—</dd>
+            <dt>Regions</dt><dd id="c-regions">—</dd>
+            <dt>Muscles</dt><dd id="c-muscles">—</dd>
+            <dt>Evaluated at gen.</dt><dd id="c-gen">—</dd>
+          </dl>
+          <div class="grid">
+            <label>Speed
+              <select id="speed">
+                <option value="0.5">0.5×</option>
+                <option value="1" selected>1×</option>
+                <option value="2">2×</option>
+                <option value="4">4×</option>
+              </select>
+            </label>
+            <label class="check"><input id="follow" type="checkbox" checked /> Follow the new champion</label>
+          </div>
+          <div class="buttons">
+            <button id="replay" disabled>Replay</button>
+            <button id="download-champ" disabled>Download</button>
+            <label class="file" title="Several can be selected (e.g. the whole champions/ folder of a run)">Load champions<input id="load-champ" type="file" accept=".json" multiple /></label>
+            <button id="download-pop" disabled>Download population</button>
+          </div>
+          <label id="gallery-field" hidden>Loaded champion
+            <select id="gallery"></select>
+          </label>
+        </section>
+        <p id="error" hidden></p>
+      </aside>
+    </main>
+    <script type="module" src="/src/viewer/main.ts"></script>
+  </body>
+</html>

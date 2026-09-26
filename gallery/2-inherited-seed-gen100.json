@@ -1,0 +1,217 @@
+{
+ "genome": {
+  "id": 3986,
+  "birthGeneration": 99,
+  "neurons": [
+   [
+    0,
+    "bias"
+   ],
+   [
+    1,
+    "input"
+   ],
+   [
+    2,
+    "input"
+   ],
+   [
+    3,
+    "input"
+   ],
+   [
+    4,
+    "input"
+   ],
+   [
+    5,
+    "input"
+   ],
+   [
+    6,
+    "input"
+   ],
+   [
+    7,
+    "input"
+   ],
+   [
+    8,
+    "input"
+   ],
+   [
+    9,
+    "input"
+   ],
+   [
+    10,
+    "input"
+   ],
+   [
+    11,
+    "input"
+   ],
+   [
+    12,
+    "output"
+   ],
+   [
+    13,
+    "output"
+   ],
+   [
+    14,
+    "output"
+   ],
+   [
+    15,
+    "output"
+   ],
+   [
+    16,
+    "output"
+   ],
+   [
+    17,
+    "output"
+   ],
+   [
+    18,
+    "output"
+   ],
+   [
+    19,
+    "output"
+   ],
+   [
+    20,
+    "output"
+   ],
+   [
+    21,
+    "output"
+   ],
+   [
+    22,
+    "output"
+   ],
+   [
+    23,
+    "output"
+   ]
+  ],
+  "connections": [
+   [
+    56,
+    2,
+    20,
+    -0.8762019865027372
+   ],
+   [
+    59,
+    2,
+    23,
+    5
+   ],
+   [
+    68,
+    3,
+    20,
+    2.73555115118972
+   ],
+   [
+    96,
+    6,
+    12,
+    0.027140119938572682
+   ],
+   [
+    108,
+    7,
+    12,
+    0.09316470450818057
+   ],
+   [
+    121,
+    8,
+    13,
+    -0.8808329522996047
+   ],
+   [
+    143,
+    9,
+    23,
+    5
+   ],
+   [
+    207,
+    0,
+    21,
+    -0.04762314545211383
+   ],
+   [
+    227,
+    11,
+    12,
+    -1.2115538678581321
+   ]
+  ],
+  "devSeed": 862567896
+ },
+ "fitness": 0.000050579976407029555,
+ "eval": {
+  "seed": 1941113478,
+  "generation": 99,
+  "cells": 20,
+  "muscles": 89,
+  "workingMuscles": 89,
+  "regions": 3,
+  "distance": 2.1879758864070866,
+  "penalty": 1.4419249419967461
+ },
+ "params": {
+  "mode": "fixed",
+  "physics": {
+   "medium": "substrate",
+   "gravity": 9.81,
+   "drag": 1,
+   "radius": 0.5,
+   "mass": 10,
+   "friction": null,
+   "substeps": 4,
+   "iterations": 2,
+   "viscosity": {
+    "parallel": 50,
+    "perpendicular": 100
+   },
+   "cellMass": 0,
+   "quadraticDrag": 0,
+   "weight": 20,
+   "groundStiffness": 500,
+   "adhesion": {
+    "stuck": 2000,
+    "free": 20
+   }
+  },
+  "dt": 0.02,
+  "hingeStiffness": 10,
+  "muscleStiffness": 1000,
+  "muscleRange": 0.15,
+  "maxHeight": 5,
+  "muscleModel": "cpg",
+  "maxAmplitude": 0.5,
+  "maxFrequency": 1,
+  "maxCoupling": 6,
+  "fitnessWindow": "second-half",
+  "musclePenalty": "geometric-mean",
+  "muscleSharing": true,
+  "settle": {
+   "speed": 0.01,
+   "hold": 0.5,
+   "maxTime": 10
+  },
+  "development": "stochastic",
+  "seedMode": "inherited"
+ },
+ "runSeed": 1
+}
