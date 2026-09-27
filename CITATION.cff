@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Open-Ended Evolutionary Development of Cell-Based Locomotory Morphologies"
+authors:
+  - family-names: "Herrera Pérez"
+    given-names: "Carlos"
+  - family-names: "Crossley"
+    given-names: "Matthew"
+  - family-names: "Doursat"
+    given-names: "René"
+version: "0.1.0"
+date-released: "2026-09-27"
+license: "GPL-3.0-or-later"
+doi: 10.5281/zenodo.23000724
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23000724
+    description: "Archived release v0.1.0 (Zenodo)"
+repository-code: "https://github.com/carlosherreraUMA/open-ended-evolutionary-development-of-cell-based-locomotory-morphologies"

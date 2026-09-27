@@ -1,5 +1,7 @@
 # Open-Ended Evolutionary Development of Cell-Based Locomotory Morphologies
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23000724.svg)](https://doi.org/10.5281/zenodo.23000724)
+
 Artificial creatures made of cells that grow, move and evolve, in the browser.
 
 ![A crawler evolved on the substrate: 23 cells, 6 articulated segments; green rings mark cells attached to the floor](docs/screenshot.png)
@@ -174,3 +176,7 @@ License, or (at your option) any later version. See [LICENSE](LICENSE).
 The NEAT implementation in `src/neat/` is a TypeScript port of
 [SharpNEAT](https://github.com/colgreen/sharpneat), Copyright © 2004–2010 Colin Green, distributed
 under the GNU General Public License version 3 or later.
+
+## Citation
+
+This release (v0.1.0) is archived at Zenodo: [10.5281/zenodo.23000724](https://doi.org/10.5281/zenodo.23000724). See [`CITATION.cff`](CITATION.cff).
